@@ -1,0 +1,63 @@
+    1  sudo apt update && sudo apt upgrade
+    2  sudo
+    3  ls
+    4  listdir
+    5  help
+    6  ssh
+    7  ssh -X a.dospekhov@osc-[N].edu.innopolis.ru
+    8  $ssh
+    9  X [username]@osc --[N].edu.innopolis.ru
+   10  $ssh
+   11  d
+   12  $ssh
+   13  X [username]@osc --[N].edu.innopolis.ru
+   14  $ssh
+   15  ssh -X a.dospekhov@osc-1.edu.innopolis.ru
+   16  gcc
+   17  whoami
+   18  hostname
+   19  man
+   20  man man
+   21  man whoami
+   22  shell
+   23  less
+   24  head
+   25  ls
+   26  man ls
+   27  pwd
+   28  jobs
+   29  cd ~
+   30  pwd
+   31  cd ..
+   32  mkdir ~/week1
+   33  cd ~/week1
+   34  grep gcc /usr/bin /r > ~/week1/ex1.txt
+   35  man grep
+   36  grep gcc /usr/bin > ~/week1/ex1.txt
+   37  less ex1.txt 
+   38  grep "gcc" "/usr/bin" > ~/week1/ex1.txt
+   39  grep "gcc"
+   40  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+   41  less ex1.txt 
+   42  ls /usr/bin
+   43  ls /usr/bin | grep gcc
+   44  gcc
+   45  sudo apt install gcc
+   46  ls /usr/bin | grep gcc
+   47  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+   48  cat ex1.txt 
+   49  history
+   50  history 
+   51  pwd
+   52  cd ~/week1/
+   53  pwd
+   54  cd ..
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd week1/
+   61  cd ~/week1/
+   62  pwd
+   63  history > ex2.txt
