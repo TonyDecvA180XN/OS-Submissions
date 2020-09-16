@@ -1,0 +1,60 @@
+The execution ex2 starts with 'ex2launcher.sh'
+
+Without using a mutex we have a race condition. This is output file
+with numbers before:
+
+0
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+
+We have almost all numbers doubled because the following line of code
+happen ~simultaniously:
+
+// Critical region
+NUMBER=$(tail -n 1 < numbers.txt)
+expr $NUMBER + 1 >> numbers.txt
+
+That means the file is read twice and number is appended twice.
+
+After we implement a mutex the result is fixed:
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+The critical section of each scrypt is entered only if it is free.
+Hence, none increment operation is doubled.
