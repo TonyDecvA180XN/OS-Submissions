@@ -1,0 +1,26 @@
+There is what we have after we launch:
+tonydecva180xn  AsusRogStrixG  ~  week8  $  ./ex2 & top -d 1
+
+top - 13:48:09 up  1:04,  0 users,  load average: 0.00, 0.00, 0.00
+Tasks:  16 total,   1 running,  15 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.1 sy,  0.0 ni, 99.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  12665.4 total,  11507.3 free,    324.1 used,    833.9 buff/cache
+MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  12082.5 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0     980    632    516 S   0.0   0.0   0:00.06 init
+    7 root      20   0     892     80     16 S   0.0   0.0   0:00.00 init
+    8 root      20   0     892     80     16 S   0.0   0.0   0:00.18 init
+    9 tonydec+  20   0   10820   5800   3372 S   0.0   0.0   0:00.26 bash
+ 5221 root      20   0    1328    432     16 S   0.0   0.0   0:00.00 init
+ 5222 root      20   0    1328    432     16 S   0.0   0.0   0:00.00 init
+ 5223 tonydec+  20   0    2612    596    528 S   0.0   0.0   0:00.00 sh
+ 5224 tonydec+  20   0    2612    608    540 S   0.0   0.0   0:00.00 sh
+ 5229 tonydec+  20   0    2612    604    540 S   0.0   0.0   0:00.00 sh
+ 5231 tonydec+  20   0  970844  59492  32016 S   0.0   0.5   0:02.09 node
+ 5250 tonydec+  20   0  848816  39376  28584 S   0.0   0.3   0:00.43 node
+ 5276 tonydec+  20   0 1111736 120576  32548 S   0.0   0.9   0:12.19 node
+ 5304 tonydec+  20   0 1446904  38896  13084 S   0.0   0.3   0:05.78 cpptools
+ 5638 tonydec+  20   0 4881280  24884  12692 S   0.0   0.2   0:01.32 cpptools-srv
+ 6447 tonydec+  20   0   94688  93164   1080 S   0.0   0.7   0:00.01 ex2
+ 6448 tonydec+  20   0   10864   3872   3368 R   0.0   0.0   0:00.00 top

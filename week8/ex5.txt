@@ -1,0 +1,10 @@
+What is the difference between a physical and a virtual address?
+
+Physical address is an index of a cell in memory stick (or unit).
+If say "read cell 0xffffffff" that means access this specific cell directly.
+
+Virtual address is imaginary address which is later translated to a physical memory address.
+Each process thinks that it owns the whole memory and treat it like physical.
+But when it tries to access it memory unit offsets it to the corresponding memory block (aka page).
+Hence OS can have multiple processes running at a time using the same memory and treating it as its own.
+All necessary data about which page belongs to each process is stored in the page table.
