@@ -1,0 +1,3 @@
+75940 ../week1/file.txt
+/home/tonydecva180xn/week1/file.txt
+/home/tonydecva180xn/week10/_ex2.txt

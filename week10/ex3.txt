@@ -1,0 +1,39 @@
+total 20
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn  9 Oct 20 22:49 _ex1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn  9 Oct 20 22:49 _ex1_1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn  9 Oct 20 22:49 _ex1_2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn  0 Oct 20 23:12 _ex3.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn 46 Oct 20 22:51 ex1.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn 97 Oct 20 23:11 ex2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn  0 Oct 20 23:53 ex3.txt
+chmod a-x _ex3.txt
+total 24
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn   9 Oct 20 22:49 _ex1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn   9 Oct 20 22:49 _ex1_1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn   9 Oct 20 22:49 _ex1_2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn   0 Oct 20 23:12 _ex3.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn  46 Oct 20 22:51 ex1.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn  97 Oct 20 23:11 ex2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn 505 Oct 21 00:03 ex3.txt
+chmod uo+rwx _ex3.txt
+total 24
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1_1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1_2.txt
+-rwxr--rwx 1 tonydecva180xn tonydecva180xn    0 Oct 20 23:12 _ex3.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn   46 Oct 20 22:51 ex1.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn   97 Oct 20 23:11 ex2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn 1020 Oct 21 00:06 ex3.txt
+chmod g=u _ex3.txt
+total 24
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1_1.txt
+-rw-r--r-- 3 tonydecva180xn tonydecva180xn    9 Oct 20 22:49 _ex1_2.txt
+-rwxrwxrwx 1 tonydecva180xn tonydecva180xn    0 Oct 20 23:12 _ex3.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn   46 Oct 20 22:51 ex1.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn   97 Oct 20 23:11 ex2.txt
+-rw-r--r-- 1 tonydecva180xn tonydecva180xn 1539 Oct 21 00:10 ex3.txt
+
+– What does 660 mean for ex3.txt? - User and Group can Read and Write
+– What does 775 mean for ex3.txt? - User and Group can do everything, Others can Read and Execute
+– What does 777 mean for ex3.txt? - Everyone can do everything

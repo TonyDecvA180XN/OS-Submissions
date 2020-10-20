@@ -1,0 +1,4 @@
+For inodenumber 75945:
+	file1
+	link1
+
