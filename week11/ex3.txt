@@ -1,0 +1,32 @@
+First program gives output:
+-------------------
+Hello
+Hello
+-------------------
+And second one gives the following:
+-------------------
+Hello
+
+
+-------------------
+We know that when we call printf() all characters it gets are saved
+in the buffer. It has a fixed size. And is not going to be flushed until
+it is full or we send a "\n" character.
+
+Therefore, we have for the 1st program:
+We put "Hello" in the buffer.
+The process if forked.
+We put "\n" in the buffer of original program.
+Original program flushes the buffer and "Hello\n" is printed.
+We put "\n" in the buffer of forked program.
+Forked program flushes the buffer and "Hello\n" is printed.
+
+And for the 2nd program:
+We put "Hello" in the buffer.
+We put "\n" in the buffer.
+Program flushes the buffer and "Hello\n" is printed.
+The process if forked.
+We put "\n" in the buffer of original program.
+Original program flushes the buffer and "\n" is printed.
+We put "\n" in the buffer of forked program.
+Forked program flushes the buffer and "\n" is printed.
