@@ -1,0 +1,26 @@
+Three strategies of dealing
+with deadlocks:
+• recovery
+• prevention
+• avoidance
+
+Recovery
+    Can be used in system with cheap rollback operation. Also, when the process can be killed without consequences (like in video games)
+
+Prevention
+    Since there we need to eliminate one of the conditions, that is likely to be circular wait.
+    For that we have simple strategies, for example assigning resources and processes with a numerical number. 
+    A process can request the resources only by increasing numbering.
+
+    Also, we can eliminate hold and wait, but it lead us to data starvation.
+
+    One of simplest methods.
+
+
+Avoidance
+    The hardest one.
+
+    Can be used only when system has access to all resources and available commands, as well as process requests.
+
+    However, it can block processes for too long.
+    Thus, should be used only in systems with high performance, the highest security and responsibility, but with assumption of delays.
